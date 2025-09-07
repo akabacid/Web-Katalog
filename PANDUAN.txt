@@ -1,0 +1,15 @@
+Setelah download dan extract, buka terminal dan jalankan perintah berikut;
+
+composer install
+npm install
+cp.env.example .env && php artisan key:generate
+
+lalu buat database baru, masukkan nama database ke file .env cari line berikut:
+
+DB_DATABASE=your_database_name
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+
+ubah sesuai config database ente lalu jalankan perintah php artisan migrate
+
+done.
